@@ -1,11 +1,12 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
-import Layout from "../components/home/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Layout from "../components/home/layout"
+import Hero from "../components/home/hero"
 
 import '../css/global.css'
+
 
 class Index extends React.Component {
   render() {
@@ -14,7 +15,8 @@ class Index extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <SEO title="Portfolio" />
+        <Hero />
       </Layout>
     )
   }
