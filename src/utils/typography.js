@@ -3,6 +3,12 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    "h2.heading": {
+      marginTop: `0rem`,
+    },
+    "h5.sub-heading": {
+      marginTop: `0rem`,
+    },
     "a.no-underline": {
       textDecoration: `none`,
       boxShadow: `none`,

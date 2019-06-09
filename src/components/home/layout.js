@@ -7,7 +7,7 @@ class Layout extends React.Component {
     const header = <NavBar />;
 
     return (
-      <div className="px-32">
+      <div className="px-48">
         <header>{header}</header>
         <main>{children}</main>
         <footer className="flex justify-center p-4">
