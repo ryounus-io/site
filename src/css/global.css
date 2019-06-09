@@ -29,3 +29,7 @@
 .bottom-5 {
   bottom: 5px;
 }
+
+.social-item :hover {
+  background-color: rgba(142, 255, 191, .3)
+}
