@@ -6,6 +6,9 @@ Wordpress2016.overrideThemeStyles = () => {
     "h2.heading": {
       marginTop: `0rem`,
     },
+    "h3.heading": {
+      marginTop: `0rem`,
+    },
     "h5.sub-heading": {
       marginTop: `0rem`,
     },

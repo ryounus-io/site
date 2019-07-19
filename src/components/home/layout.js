@@ -1,5 +1,6 @@
 import React from "react"
 import NavBar from "./navbar";
+import Footer from "./footer";
 
 class Layout extends React.Component {
   render() {
@@ -7,14 +8,10 @@ class Layout extends React.Component {
     const header = <NavBar />;
 
     return (
-      <div className="px-48">
-        <header>{header}</header>
+      <div>
+        <header className="px-48">{header}</header>
         <main>{children}</main>
-        <footer className="flex justify-center p-4">
-          <span>
-            © {new Date().getFullYear()}, Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a>
-          </span>
-        </footer>
+        <Footer />
       </div>
     )
   }

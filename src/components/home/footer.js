@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 function Social() {
   return (
-    <section className="container flex-grow">
+    <footer className="flex-grow">
       <ul className="flex items-end justify-center list-none">
         <li className="px-2 social-item">
           <a
@@ -83,7 +83,13 @@ function Social() {
           </a>
         </li>
       </ul>
-    </section>
+
+      <div className="flex justify-center p-4">
+        <span>
+          © {new Date().getFullYear()}, Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a>
+        </span>
+      </div>
+    </footer>
   )
 }
 

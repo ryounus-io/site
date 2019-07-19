@@ -6,30 +6,92 @@
 
 @tailwind utilities;
 
-.font-hightlight-green {
-  background-color: rgba(142, 255, 191, .3)
+/* Variables */
+:root {
+  /* Polar Night */
+  --nord0: #2E3440;
+  --nord1: #3B4252;
+  --nord2: #434C5E;
+  --nord3: #4C566A;
+  /* Snow Storm */
+  --nord4: #D8DEE9;
+  --nord5: #E5E9F0;
+  --nord6: #ECEFF4;
+  /* Frost */
+  --nord7: #8FBCBB;
+  --nord8: #88C0D0;
+  --nord9: #81A1C1;
+  --nord10: #5E81AC;
+  /* Aurora */
+  --nord11: #BF616A;
+  --nord12: #D08770;
+  --nord13: #EBCB8B;
+  --nord14: #A3BE8C;
+  --nord15: #B48EAD;
+  /* Misc */
+  --highlight-blue: rgba(76, 86, 106, .3);
+  --bg-colour: #F2F4F8;
+  --footer-colour: #FBFBFC;
 }
 
-.font-hightlight-blue {
-  background-color: rgba(60, 152, 255, .3)
+html {
+  background-color: var(--bg-colour);
 }
 
-.font-hightlight-red {
-  background-color: rgba(255, 119, 119, .3)
+body {
+  color: var(--nord3);
 }
 
-.font-hightlight-yellow {
-  background-color: rgba(253, 179, 69, .3)
+footer {
+  background-color: var(--footer-colour);
 }
 
-.font-hightlight-purple {
-  background-color: rgba(240, 133, 255, .3)
+/* Text */
+.text-nord0 {
+  color: var(--nord0);
+}
+.text-nord1 {
+  color: var(--nord1);
+}
+.text-nord2 {
+  color: var(--nord2);
+}
+.text-nord3 {
+  color: var(--nord3);
 }
 
+/* Misc */
 .bottom-5 {
   bottom: 5px;
 }
-
+.font-hightlight {
+  background-color: var(--highlight-blue);
+}
 .social-item :hover {
-  background-color: rgba(142, 255, 191, .3)
+  background-color: var(--highlight-blue);
+}
+
+.divider-wrapper {
+    display: block;
+    bottom: -1px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    background-color: transparent;
+    pointer-events: none;
+    user-select: none;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.wave1 {
+    fill: rgb(244, 246, 249);
+    transition: fill 400ms ease-in-out 0s;
+}
+.wave2 {
+    fill: rgb(247, 249, 251);
+    transition: fill 400ms ease-in-out 0s;
+}
+.wave3 {
+    fill: rgb(251, 251, 252);
+    transition: fill 400ms ease-in-out 0s;
 }
