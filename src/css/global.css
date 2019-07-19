@@ -29,21 +29,19 @@
   --nord14: #A3BE8C;
   --nord15: #B48EAD;
   /* Misc */
+  --white: #ffffff;
+  --black: #000000;
   --highlight-blue: rgba(76, 86, 106, .3);
   --bg-colour: #F2F4F8;
-  --footer-colour: #FBFBFC;
-}
-
-html {
-  background-color: var(--bg-colour);
 }
 
 body {
+  background-color: var(--bg-colour);
   color: var(--nord3);
 }
 
 footer {
-  background-color: var(--footer-colour);
+  background-color: var(--nord1);
 }
 
 /* Text */
@@ -60,17 +58,7 @@ footer {
   color: var(--nord3);
 }
 
-/* Misc */
-.bottom-5 {
-  bottom: 5px;
-}
-.font-hightlight {
-  background-color: var(--highlight-blue);
-}
-.social-item :hover {
-  background-color: var(--highlight-blue);
-}
-
+/* Divider */
 .divider-wrapper {
     display: block;
     bottom: -1px;
@@ -84,14 +72,32 @@ footer {
     overflow: hidden;
 }
 .wave1 {
-    fill: rgb(244, 246, 249);
+    fill: var(--nord3);
     transition: fill 400ms ease-in-out 0s;
 }
 .wave2 {
-    fill: rgb(247, 249, 251);
+    fill: var(--nord2);
     transition: fill 400ms ease-in-out 0s;
 }
 .wave3 {
-    fill: rgb(251, 251, 252);
+    fill: var(--nord1);
     transition: fill 400ms ease-in-out 0s;
+}
+
+/* Social Icons */
+.social-icon {
+  height: 2rem;
+  width: 3rem;
+  fill: var(--nord4)
+}
+.social-icon :hover {
+  fill: var(--white)
+}
+
+/* Misc */
+.bottom-5 {
+  bottom: 5px;
+}
+.font-hightlight {
+  background-color: var(--highlight-blue);
 }
