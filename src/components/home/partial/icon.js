@@ -5,8 +5,7 @@ function Icon() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 481 391.18"
-      height="500"
-      width="500"
+      className="w-full md:px-10 lg:px-12 xl:px-14 hero-padding"
     >
       <path
         fill="#e8ebf5"
