@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from "gatsby"
 import Divider from './partial/divider';
-import Astronaut from "./partial/astronaut"
 import Icon from './partial/icon'
 
 function Hero() {
@@ -9,7 +8,7 @@ function Hero() {
     <section className="flex-grow">
       <div className="flex">
         <div className="w-1/2">
-          <div className="text-2xl text-gray-800 font-hairline p-48 mb-32">
+          <div className="text-2xl text-gray-800 font-hairline p-48 mb-5">
             <h2 className="heading text-nord1 text-6xl">Hello, I'm Rahman.</h2>
             <h3 className="heading text-nord3 text-2xl">
               Full-Stack Software Developer
@@ -27,7 +26,7 @@ function Hero() {
           </div>
         </div>
 
-        <div className="w-1/2">
+        <div className="w-1/2 flex justify-center items-center">
           <Icon />
         </div>
       </div>

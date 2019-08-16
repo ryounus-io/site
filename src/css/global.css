@@ -101,3 +101,8 @@ footer {
 .font-hightlight {
   background-color: var(--highlight-blue);
 }
+
+/* Footer */
+.footer-text {
+  color: var(--nord4);
+}

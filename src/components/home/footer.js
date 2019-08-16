@@ -15,8 +15,9 @@ function Social() {
       </ul>
 
       <div className="flex justify-center p-4">
-        <span>
-          © {new Date().getFullYear()}, Built with {` `} <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <span className="footer-text">
+          © {new Date().getFullYear()}, Built with {` `}{" "}
+          <a href="https://www.gatsbyjs.org">Gatsby</a>
         </span>
       </div>
     </footer>
