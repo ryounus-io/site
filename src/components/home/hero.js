@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from "gatsby"
-import Divider from './partial/divider';
 import Icon from './partial/icon'
 
 function Hero() {
@@ -32,8 +31,6 @@ function Hero() {
           <Icon />
         </div>
       </div>
-
-      <Divider />
     </section>
   )
 }
