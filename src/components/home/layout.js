@@ -9,7 +9,7 @@ class Layout extends React.Component {
 
     return (
       <div>
-        <header className="px-48">{header}</header>
+        <header className="px-10 sm:px-10 md:px-10 lg:px-16 xl:px-32">{header}</header>
         <main>{children}</main>
         <Footer />
       </div>

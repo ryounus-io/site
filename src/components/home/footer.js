@@ -8,7 +8,7 @@ import Linkedin from "./partial/socials/linkedin";
 function Social() {
   return (
     <footer className="flex-grow py-4">
-      <ul className="flex items-end justify-center list-none">
+      <ul className="flex items-end justify-center list-none ignore">
         <Twitter />
         <Github />
         <Linkedin />
