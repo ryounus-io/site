@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "gatsby"
 import Icon from './partial/icon'
 
 function Hero() {

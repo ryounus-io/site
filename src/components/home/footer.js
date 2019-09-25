@@ -1,6 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
-
 import Twitter from "./partial/socials/twitter";
 import Github from "./partial/socials/github";
 import Linkedin from "./partial/socials/linkedin";
