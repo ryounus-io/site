@@ -3,7 +3,7 @@ module.exports = {
     title: `RYounus`,
     author: `Rahman Younus`,
     description: `My experiences as a Full-stack Software Developer`,
-    siteUrl: `https://ryounus.netlify.com/`,
+    siteUrl: `https://ryounus.dev/`,
     social: {
       twitter: `rahman_younus`,
     },
@@ -57,14 +57,16 @@ module.exports = {
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
+      //PWA manifest
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `RYounus Site`,
+        short_name: `RYounus`,
+        description: `My experiences as a Full-stack Software Developer`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#E5E9F0`,
+        theme_color: `#434C5E`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/gatsby-icon.png`, // Todo: Update the correct icon when ready
       },
     },
     `gatsby-plugin-offline`,
