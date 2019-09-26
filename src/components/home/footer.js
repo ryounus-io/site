@@ -7,7 +7,7 @@ function Social() {
   return (
     <footer className="flex-grow py-4">
       <ul className="flex items-end justify-center list-none ignore">
-        <Twitter />
+        {/* <Twitter /> */}
         <Github />
         <Linkedin />
       </ul>

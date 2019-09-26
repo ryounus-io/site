@@ -26,13 +26,8 @@ function NavBar() {
       </div>
       <div className="w-full block lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
-          {/*
-          <Link to="/blog" className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-700 hover:text-black mr-4">
-            Blog
-          </Link>
-          */}
           <a
-            href="/assets/temp/resume.pdf"
+            href="/assets/pdf/cv_v3_sept19_web.pdf"
             className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-700 hover:text-black mr-4"
           >
             Resume

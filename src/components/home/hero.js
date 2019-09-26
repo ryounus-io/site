@@ -11,16 +11,16 @@ function Hero() {
               Hello, I'm Rahman.
             </h2>
             <h3 className="heading text-nord3 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl">
-              Full-Stack Software Developer
+              Full-Stack Software Developer.
             </h3>
             <div>
               <span className="block my-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
-                I am a passionate developer with numerous years of experience, I
-                love creating rich bespoke digital experiences on the internet
+                I am a passionate developer with numerous years of experience. I
+                love creating rich and bespoke digital experiences on the internet.
               </span>
               <span className="block my-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                 I build open-source software in my free time and occasionaly
-                blog on my experiences in tech
+                blog on my experiences in tech.
               </span>
             </div>
           </div>
