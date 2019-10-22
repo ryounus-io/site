@@ -5,7 +5,7 @@ module.exports = {
     description: `My experiences as a Full-stack Software Developer`,
     siteUrl: `https://ryounus.dev/`,
     social: {
-      twitter: `rahman_younus`,
+      twitter: `rahmancodes`,
     },
   },
   plugins: [

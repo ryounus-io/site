@@ -1,11 +1,11 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/home/layout"
+import Layout from "../components/partials/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-import '../css/global.css'
+import "../css/global.css"
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,26 +16,35 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{ __html: node.frontmatter.description || node.excerpt, }}
-              />
+        <div className="flex flex-wrap">
+          <div className="w-full">
+            <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
+              {posts.map(({ node }) => {
+                const title = node.frontmatter.title || node.fields.slug
+                return (
+                  <div key={node.fields.slug}>
+                    <h3 style={{ marginBottom: rhythm(1 / 4) }}>
+                      <Link
+                        to={node.fields.slug}
+                        className="text-gray-700 hover:text-black mr-4"
+                      >
+                        {title}
+                      </Link>
+                    </h3>
+                    <span className="text-gray-600">
+                      {node.frontmatter.date}
+                    </span>
+                    <p
+                      dangerouslySetInnerHTML={{
+                        __html: node.frontmatter.description || node.excerpt,
+                      }}
+                    />
+                  </div>
+                )
+              })}
             </div>
-          )
-        })}
+          </div>
+        </div>
       </Layout>
     )
   }

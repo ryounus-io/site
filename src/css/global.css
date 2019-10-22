@@ -35,6 +35,10 @@
   --bg-colour: #F2F4F8;
 }
 
+html {
+  background-color: var(--nord1);
+}
+
 body {
   background-color: var(--bg-colour);
   color: var(--nord3);

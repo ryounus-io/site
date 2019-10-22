@@ -2,10 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import SEO from "../components/seo"
-import Layout from "../components/home/layout"
+import Layout from "../components/partials/layout"
 import Hero from "../components/home/hero"
 
-import '../css/global.css'
+import "../css/global.css"
 
 class Index extends React.Component {
   render() {

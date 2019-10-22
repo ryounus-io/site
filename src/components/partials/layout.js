@@ -1,12 +1,12 @@
 import React from "react"
-import NavBar from "./navbar";
-import Divider from "./partial/divider"
-import Footer from "./footer";
+import NavBar from "./../home/navbar"
+import Divider from "./../home/partial/divider"
+import Footer from "./../home/footer"
 
 class Layout extends React.Component {
   render() {
-    const { location, title, children } = this.props
-    const header = <NavBar />;
+    const { children } = this.props
+    const header = <NavBar />
 
     return (
       <div>
