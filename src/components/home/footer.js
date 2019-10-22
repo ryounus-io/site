@@ -1,13 +1,13 @@
 import React from "react"
-import Twitter from "./partial/socials/twitter";
-import Github from "./partial/socials/github";
-import Linkedin from "./partial/socials/linkedin";
+import Twitter from "./partial/socials/twitter"
+import Github from "./partial/socials/github"
+import Linkedin from "./partial/socials/linkedin"
 
 function Social() {
   return (
     <footer className="flex-grow py-4">
       <ul className="flex items-end justify-center list-none ignore">
-        {/* <Twitter /> */}
+        <Twitter />
         <Github />
         <Linkedin />
       </ul>

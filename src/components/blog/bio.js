@@ -37,13 +37,14 @@ function Bio() {
                 borderRadius: `50%`,
               }}
             />
-            <p>
-              Written by <strong>{author}</strong>
-              {` `}
-              {/* <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
-              </a> */}
-            </p>
+            <div>
+              <span className="block">
+                Written by <strong>{author}</strong>
+              </span>
+              <a href={`https://twitter.com/${social.twitter}`}>
+                Follow me on Twitter
+              </a>
+            </div>
           </div>
         )
       }}
