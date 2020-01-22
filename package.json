@@ -3,8 +3,27 @@
   "description": "Blog and Website of RYounus",
   "version": "0.0.1",
   "author": "Rahman Younus <rahman_95@live.co.uk>",
+  "license": "MIT",
+  "keywords": [
+    "ryounus",
+    "blog",
+    "portfolio",
+    "landing",
+    "site",
+    "gatsby",
+    "react"
+  ],
+  "homepage": "https://github.com/ryounus-io/site#readme",
   "bugs": {
     "url": "https://github.com/ryounus-io/site/issues"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "dependencies": {
     "gatsby": "^2.8.0",
@@ -39,24 +58,5 @@
   "devDependencies": {
     "prettier": "^1.17.1",
     "tailwindcss": "^1.0.2"
-  },
-  "homepage": "https://github.com/ryounus-io/site#readme",
-  "keywords": [
-    "ryounus",
-    "blog",
-    "portfolio",
-    "landing",
-    "site",
-    "gatsby",
-    "react"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   }
 }
