@@ -1,6 +1,6 @@
 /* global.css */
 
-@tailwind preflight;
+@tailwind base;
 
 @tailwind components;
 

@@ -3,6 +3,8 @@ import NavBar from "./../home/navbar"
 import Divider from "./../home/partial/divider"
 import Footer from "./../home/footer"
 
+import { css } from "../../utils/typography"
+
 class Layout extends React.Component {
   render() {
     const { children } = this.props
@@ -10,6 +12,11 @@ class Layout extends React.Component {
 
     return (
       <div>
+        <style
+          dangerouslySetInnerHTML={{
+            __html: css,
+          }}
+        />
         <header className="px-10 sm:px-10 md:px-10 lg:px-16 xl:px-32">
           {header}
         </header>
