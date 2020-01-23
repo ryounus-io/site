@@ -16,14 +16,17 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Seo title="All posts" />
-        <div className="flex flex-wrap">
-          <div className="w-full h-64">
-            <div className="px-10 m-4 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
+        <div className="flex flex-wrap -mt-8">
+          <div className="w-full h-64 mb-8">
+            <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
                   <div key={node.fields.slug}>
-                    <h3 style={{ marginBottom: rhythm(1 / 4) }}>
+                    <h3
+                      className="leading-loose"
+                      style={{ marginBottom: rhythm(1 / 4) }}
+                    >
                       <Link
                         to={node.fields.slug}
                         className="text-gray-700 hover:text-black mr-4"

@@ -12,7 +12,7 @@ class NotFoundPage extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Seo title="404: Not Found" />
-        <div className="flex flex-wrap">
+        <div className="flex flex-wrap -mt-8">
           <div className="w-full">
             <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 mb-24">
               <h1>Not Found</h1>
