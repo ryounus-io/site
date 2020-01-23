@@ -1,5 +1,5 @@
-import React from 'react'
-import Icon from './partial/icon'
+import React from "react"
+import HeroImage from "./partial/HeroImage"
 
 function Hero() {
   return (
@@ -16,7 +16,8 @@ function Hero() {
             <div>
               <span className="block my-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                 I am a passionate developer with numerous years of experience. I
-                love creating rich and bespoke digital experiences on the internet.
+                love creating rich and bespoke digital experiences on the
+                internet.
               </span>
               <span className="block my-5 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl">
                 I build open-source software in my free time and occasionaly
@@ -27,11 +28,11 @@ function Hero() {
         </div>
 
         <div className="w-full lg:w-1/3 xl:w-1/2 flex justify-center items-center">
-          <Icon />
+          <HeroImage />
         </div>
       </div>
     </section>
   )
 }
 
-export default Hero;
+export default Hero

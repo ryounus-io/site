@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 function Linkedin() {
   return (
@@ -8,6 +8,7 @@ function Linkedin() {
         href="https://www.linkedin.com/in/rahmanyounus/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Personal LinkedIn"
       >
         <svg className="social-icon" viewBox="0 0 18 18">
           <path
@@ -17,7 +18,7 @@ function Linkedin() {
         </svg>
       </a>
     </li>
-  );
+  )
 }
 
-export default Linkedin;
+export default Linkedin

@@ -49,7 +49,7 @@ module.exports = {
                 TS: `TypeScript`,
                 FOMO: `Fear Of Missing Out`,
                 "In'sha'Allah": `God willing`,
-                Alhamdulilah: `All the praises and thanks be to God`,
+                Alhamdulilah: `All the praise and thanks be to God`,
               },
             },
           },

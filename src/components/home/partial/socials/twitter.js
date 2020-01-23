@@ -8,6 +8,7 @@ function Twitter() {
         href="https://twitter.com/rahmancodes"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Personal Twitter"
       >
         <svg
           className="social-icon"

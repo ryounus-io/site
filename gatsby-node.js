@@ -6,7 +6,7 @@ const postsPrefix = "blog"
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/pages/blog-post.js`)
+  const blogPost = path.resolve(`./src/pages/blogPost.js`)
   return graphql(
     `
       {

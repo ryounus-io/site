@@ -1,7 +1,7 @@
 import React from "react"
-import NavBar from "./../home/navbar"
-import Divider from "./../home/partial/divider"
-import Footer from "./../home/footer"
+import NavBar from "../home/Navbar"
+import WaveFormDivider from "../home/partial/WaveFormDivider"
+import Footer from "../home/Footer"
 
 import { css } from "../../utils/typography"
 
@@ -21,7 +21,7 @@ class Layout extends React.Component {
           {header}
         </header>
         <main>{children}</main>
-        <Divider />
+        <WaveFormDivider />
         <Footer />
       </div>
     )

@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/blog/bio"
-import Layout from "../components/partials/layout"
-import SEO from "../components/seo"
+import Bio from "../components/blog/Bio"
+import Layout from "../components/partials/Layout"
+import SEO from "../components/SEO"
 import { rhythm, scale } from "../utils/typography"
 
-class BlogPostTemplate extends React.Component {
+class BlogPost extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -32,12 +32,10 @@ class BlogPostTemplate extends React.Component {
                   marginTop: rhythm(-1),
                 }}
               >
-                <div className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl">
-                  <span className="text-gray-600">{post.frontmatter.date}</span>
+                <div className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-nord3">
+                  <span>{post.frontmatter.date}</span>
                   <span className="px-3">|</span>
-                  <span className="text-gray-700">
-                    {post.fields.readingTime.text}
-                  </span>
+                  <span>{post.fields.readingTime.text}</span>
                 </div>
               </div>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -80,7 +78,7 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default BlogPost
 
 export const pageQuery = graphql`
   query($slug: String) {

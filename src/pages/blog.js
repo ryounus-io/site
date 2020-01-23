@@ -1,8 +1,8 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Layout from "../components/partials/layout"
-import SEO from "../components/seo"
+import Layout from "../components/partials/Layout"
+import SEO from "../components/SEO"
 import { rhythm } from "../utils/typography"
 
 import "../css/global.css"

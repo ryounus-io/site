@@ -94,7 +94,7 @@ footer {
   width: 3rem;
   fill: var(--nord4)
 }
-.social-icon :hover {
+.social-item :hover {
   fill: var(--white)
 }
 
@@ -109,6 +109,10 @@ footer {
 /* Footer */
 .footer-text {
   color: var(--nord4);
+}
+
+footer a {
+  color: var(--nord5);
 }
 
 /* Hero Icon */
