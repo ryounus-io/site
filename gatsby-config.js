@@ -39,6 +39,18 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-acronyms`,
+            options: {
+              acronyms: {
+                CSS: `Cascading Style Sheets`,
+                HTML: `Hypertext Markup Language`,
+                JS: `JavaScript`,
+                TS: `TypeScript`,
+                FOMO: `Fear Of Missing Out`,
+              },
+            },
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
