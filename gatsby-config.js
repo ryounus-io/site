@@ -48,6 +48,8 @@ module.exports = {
                 JS: `JavaScript`,
                 TS: `TypeScript`,
                 FOMO: `Fear Of Missing Out`,
+                "In'sha'Allah": `God willing`,
+                Alhamdulilah: `All the praises and thanks be to God`,
               },
             },
           },

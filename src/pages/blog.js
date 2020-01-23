@@ -17,8 +17,8 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
         <div className="flex flex-wrap">
-          <div className="w-full">
-            <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
+          <div className="w-full h-64">
+            <div className="px-10 m-4 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
