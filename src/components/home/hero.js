@@ -1,4 +1,5 @@
 import React from "react"
+
 import HeroIcon from "../../assets/heroIcon.svg"
 
 function Hero() {

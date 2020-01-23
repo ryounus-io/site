@@ -1,9 +1,9 @@
 import React from "react"
 import NavBar from "../home/Navbar"
-import WaveFormDivider from "../home/partial/WaveFormDivider"
 import Footer from "../home/Footer"
-
 import { css } from "../../utils/typography"
+
+import WaveFormDivider from "../../assets/waveFormDivider.svg"
 
 class Layout extends React.Component {
   render() {
