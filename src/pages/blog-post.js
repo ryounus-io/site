@@ -19,9 +19,11 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <div className="flex flex-wrap">
-          <div className="w-full mx-20">
+          <div className="w-full mx-2 sm:mx-10 md:mx-20 lg:mx-20 xl:mx-40">
             <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
-              <h1>{post.frontmatter.title}</h1>
+              <h1 className="mb-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                {post.frontmatter.title}
+              </h1>
               <div
                 style={{
                   ...scale(-1 / 5),
@@ -30,7 +32,7 @@ class BlogPostTemplate extends React.Component {
                   marginTop: rhythm(-1),
                 }}
               >
-                <div className="text-xl">
+                <div className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl">
                   <span className="text-gray-600">{post.frontmatter.date}</span>
                   <span className="px-3">|</span>
                   <span className="text-gray-700">
