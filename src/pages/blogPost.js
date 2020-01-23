@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/blog/Bio"
 import Layout from "../components/partials/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPost extends React.Component {
@@ -14,7 +14,7 @@ class BlogPost extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/partials/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 
 class NotFoundPage extends React.Component {
   render() {
@@ -11,7 +11,7 @@ class NotFoundPage extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="404: Not Found" />
+        <Seo title="404: Not Found" />
         <div className="flex flex-wrap">
           <div className="w-full">
             <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 mb-24">

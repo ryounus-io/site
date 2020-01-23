@@ -2,7 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Layout from "../components/partials/Layout"
-import SEO from "../components/SEO"
+import Seo from "../components/Seo"
 import { rhythm } from "../utils/typography"
 
 import "../css/global.css"
@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
+        <Seo title="All posts" />
         <div className="flex flex-wrap">
           <div className="w-full h-64">
             <div className="px-10 m-4 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
