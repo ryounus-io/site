@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
           description={post.frontmatter.description || post.excerpt}
         />
         <div className="flex flex-wrap">
-          <div className="w-full">
+          <div className="w-full mx-20">
             <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
               <h1>{post.frontmatter.title}</h1>
               <div
