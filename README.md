@@ -19,6 +19,7 @@ This site was built using a starter found on the gatsby docs. The starter has be
 - Includes plugins for easy, beautiful typography
 - Includes React Helmet to allow editing site meta tags
 - Includes plugins for offline support out of the box
+- Added Brotli support
 
 ## Todo
 - [x] Add Tailwind
