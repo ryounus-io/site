@@ -1,5 +1,5 @@
 import React from "react"
-import HeroImage from "./partial/HeroImage"
+import HeroIcon from "../../assets/heroIcon.svg"
 
 function Hero() {
   return (
@@ -28,7 +28,7 @@ function Hero() {
         </div>
 
         <div className="w-full lg:w-1/3 xl:w-1/2 flex justify-center items-center">
-          <HeroImage />
+          <HeroIcon />
         </div>
       </div>
     </section>
