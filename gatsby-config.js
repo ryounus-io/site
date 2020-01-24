@@ -66,7 +66,6 @@ module.exports = {
                 "R&D": `Research & Development`,
                 "In'sha'Allah": `God willing`,
                 Alhamdulilah: `All the praise and thanks be to God`,
-                "🤞🏾": `Fingers crossed`,
               },
             },
           },
