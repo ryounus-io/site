@@ -111,7 +111,12 @@ footer {
   color: var(--nord4);
 }
 
+footer {
+  margin: -1px;
+}
+
 footer a {
+  font-style: italic;
   color: var(--nord5);
 }
 

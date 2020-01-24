@@ -1,46 +1,72 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 
 function NavBar() {
+  const [isActive, setActive] = useState(false)
+
+  const handleButtonClick = () => {
+    setActive(!isActive)
+  }
+
   return (
-    <nav className="flex items-center justify-between flex-wrap py-6">
-      <div className="flex items-center flex-shrink-0 mr-6">
-        <Link
-          to="/"
-          className="font-semibold text-gray-700 no-underline text-3xl hover:text-black no-underline tracking-tight"
-        >
-          RYounus
-        </Link>
-      </div>
-      <div className="block lg:hidden">
-        <button className="flex items-center px-3 py-2 border rounded text-gray-700 hover:text-white hover:border-white">
-          <svg
-            className="fill-current h-3 w-3"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <title>Menu</title>
-            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-          </svg>
-        </button>
-      </div>
-      <div className="w-full block lg:flex lg:items-center lg:w-auto">
-        <div className="text-sm lg:flex-grow">
+    <header className="sm:flex sm:justify-between sm:items-center sm:px-4 sm:py-3">
+      <div className="flex items-center justify-between px-4 py-3 sm:p-0">
+        <div>
           <Link
-            to="blog"
-            className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-700 hover:text-black mr-4"
+            to="/"
+            className="font-semibold text-gray-700 no-underline text-3xl hover:text-black no-underline tracking-tight"
           >
-            Blog
+            RYounus
           </Link>
-          <a
-            href="/assets/pdf/cv_v3_sept19_web.pdf"
-            className="block mt-4 lg:inline-block lg:mt-0 text-xl text-gray-700 hover:text-black mr-4"
+        </div>
+        <div className="sm:hidden">
+          <button
+            onClick={handleButtonClick}
+            type="button"
+            className="block text-gray-700 hover:text-black focus:text-gray"
           >
-            Resume
-          </a>
+            <svg
+              className="fill-current h-4 w-4"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              {isActive && (
+                <path
+                  className="menu-open"
+                  fillRule="evenodd"
+                  d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
+                />
+              )}
+              {!isActive && (
+                <path
+                  className="menu-closed"
+                  fillRule="evenodd"
+                  d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
+                />
+              )}
+            </svg>
+          </button>
         </div>
       </div>
-    </nav>
+      <nav
+        className={`${
+          isActive ? "block" : "hidden"
+        } -mt-4 px-2 pt-2 pb-4 sm:flex sm:p-0 sm:mt-0`}
+      >
+        <Link
+          to="blog"
+          className="block px-2 py-1 font-semibold text-xl text-gray-700 hover:text-black sm:mx-2"
+        >
+          Blog
+        </Link>
+        <a
+          href="/assets/pdf/cv_v3_sept19_web.pdf"
+          className="block px-2 py-1 font-semibold text-xl text-gray-700 hover:text-black sm:mx-2"
+        >
+          Resume
+        </a>
+      </nav>
+    </header>
   )
 }
 
