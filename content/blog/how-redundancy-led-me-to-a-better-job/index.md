@@ -1,9 +1,9 @@
 ---
 title: How redundancy led me to a better job
-date: "2020-01-22T22:14:00.000Z"
-description: My journey through redundancy and finding a better job in the end
+date: "2020-02-01T15:00:00.000Z"
+description: My journey navigating through redundancy and finding a better job
 ---
-> Disclaimer: I fully understand that I am a privileged individual who has a university degree and multiple years of experience backing me, I understand that others who have been made redundant may have struggled more in getting another job, this post does not intend to make light of their struggles.
+> Disclaimer: I fully understand that I am a privileged individual who has a university degree and multiple years of experience backing me, I recognise that others who have been made redundant may have struggled a lot more in getting another job, this post does not intend to make light of their struggles.
 
 **TL;DR** I was made redundant towards the back end of last year, I did, fortunately, get given a brief warning beforehand and made the most of it by applying for multiple jobs that I had interests in. I managed to land the ideal next job and finally made the move towards the tech stack I always wanted to be a part of  🚀👨🏽‍💻
 
@@ -25,11 +25,15 @@ I did, however, feel like I lost my passion in PHP, I had been working with it s
 > Magpie Effect: *An overwhelming urge to purchase an item of no practical value and/or out of once price range purely based on its appearance.
 Usually the item in question is either glittery or catching the light causing the victim to become entranced by said item.* [Urban Dictionary](https://www.urbandictionary.com/define.php?term=Magpie%20Effect)
 
+![Fomo](./assets/fomo.jpg "This is how I felt whilst all the cool kids were messing with Full-stack JavaScript and I wasn't 😒")
+
 ### Being made redundant
 
 Sometime in October, we had our usual [Daily Stand-up Ceremony](https://www.atlassian.com/agile/scrum/ceremonies) and that’s where we were told the news. We were informed about the probability that we could be made redundant if the company could not gather funds to continue. I remember that month was quite intense and exhausting as we were living in continuous fear of the impending news. I still remember not feeling creative or even motivated to work properly. I used to feel deflated and was quite worried about my livelihood, I had a lot of financial plans and goals that I wanted to aim for in the near future, and this would affect all of them. Whilst this was all going on, the only smart move was to apply for as many jobs as I could.
 
 Fast-forward to around mid-October, we were given the bad news we were expecting but hoped would never receive, we were told we would be made redundant as the company would soon cease trading. It wasn’t really a huge shock to us as we were expecting it. Having said that, being made redundant is still one of the worst feelings I have experienced in my short life. I was fortunate enough to have savings stashed away which I could lean on in tough times. Since we were made redundant mid-month, we also didn’t get our salary for that month, we were required to claim this back from the government and were told that it could take up to 6-8 weeks for us to see it.
+
+![Passed Out](./assets/passed-out.jpg "Comedic dramatisation of me during that tough period 😅")
 
 ### Landing the new Job
 
@@ -42,8 +46,12 @@ I was then sent a technical test to do, I decided to spend 3-5 solid evenings af
 
 I was really nervous about the interview and spent a lot of time preparing for it, it was the ideal opportunity for me. I had spent such a long time on tech test, so I didn’t want it to be futile and a waste of time. The interview went quite well. In hindsight, however, there were a few things I wish I had done better on, but I was feeling generally good about it. Fast forward to Monday, I received a phone call from the recruiter with the news I was hoping for, I was overwhelmed and glad that they chose to offer me the job 🎉✨
 
+![Planning](./assets/planning.jpg "Me coming up with the perfect plan to land the job opportunity 🧐")
+
 ### Conclusion
 
-If you’re still here reading this, then I want to say thanks for sticking by, I hope it’s been a good and insightful read. As you probably can imagine the end of 2019 was quite an emotional and mental rollercoaster for me, I hope I managed to capture some of those raw feelings in this post. Alhamdulilah, I am still working at DAZN and I am thoroughly enjoying it here; I’m picking up a lot of cool new tech and couldn’t really ask for anything more.
+If you’re still here reading this, then I want to say thanks for sticking by, I hope it’s been a good, insightful and entertaining read. As you probably can imagine the end of 2019 was quite an emotional and mental rollercoaster for me, I hope I managed to capture some of those raw feelings in this post. Alhamdulilah, I am still working at DAZN and I am thoroughly enjoying it here; I’m picking up a lot of cool new tech and couldn’t really ask for anything more.
 
 *I believe in a way this whole ordeal was a blessing in disguise as it led me to a better opportunity where I’m happier, more challenged and have job stability.*
+
+*2019 was probably one of my worst years, had a lot of downfalls in my personal life and career. But Alhamdulilah got back up from each one of them, a lot of lessons learnt. To a more prosperous and fruitful 2020 In'sha'Allah*

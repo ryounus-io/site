@@ -105,6 +105,12 @@ footer {
 .font-hightlight {
   background-color: var(--highlight-blue);
 }
+.gatsby-resp-image-figcaption {
+  text-align: center;
+  font-style: italic;
+  color: var(--nord2);
+  margin: 1rem;
+}
 
 /* Footer */
 .footer-text {
