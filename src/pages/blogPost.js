@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/blog/bio"
-import Layout from "../components/partials/layout"
-import SEO from "../components/seo"
+import Bio from "../components/blog/Bio"
+import Layout from "../components/partials/Layout"
+import Seo from "../components/Seo"
 import { rhythm, scale } from "../utils/typography"
 
-class BlogPostTemplate extends React.Component {
+class BlogPost extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -14,14 +14,16 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
         />
-        <div className="flex flex-wrap">
-          <div className="w-full">
+        <div className="flex flex-wrap -mt-8">
+          <div className="w-full mx-2 sm:mx-10 md:mx-20 lg:mx-20 xl:mx-40">
             <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
-              <h1>{post.frontmatter.title}</h1>
+              <h1 className="mb-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                {post.frontmatter.title}
+              </h1>
               <div
                 style={{
                   ...scale(-1 / 5),
@@ -30,12 +32,10 @@ class BlogPostTemplate extends React.Component {
                   marginTop: rhythm(-1),
                 }}
               >
-                <div className="text-xl">
-                  <span className="text-gray-600">{post.frontmatter.date}</span>
+                <div className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-nord3">
+                  <span>{post.frontmatter.date}</span>
                   <span className="px-3">|</span>
-                  <span className="text-gray-700">
-                    {post.fields.readingTime.text}
-                  </span>
+                  <span>{post.fields.readingTime.text}</span>
                 </div>
               </div>
               <div dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -78,7 +78,7 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default BlogPostTemplate
+export default BlogPost
 
 export const pageQuery = graphql`
   query($slug: String) {

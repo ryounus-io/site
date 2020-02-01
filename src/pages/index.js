@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import SEO from "../components/seo"
-import Layout from "../components/partials/layout"
-import Hero from "../components/home/hero"
+import Layout from "../components/partials/Layout"
+import Seo from "../components/Seo"
+import Hero from "../components/home/Hero"
 
 import "../css/global.css"
 
@@ -14,7 +14,7 @@ class Index extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="Portfolio" />
+        <Seo title="RYounus - Portfolio" />
         <Hero />
       </Layout>
     )

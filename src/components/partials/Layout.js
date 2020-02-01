@@ -1,9 +1,9 @@
 import React from "react"
-import NavBar from "./../home/navbar"
-import Divider from "./../home/partial/divider"
-import Footer from "./../home/footer"
-
+import NavBar from "../home/NavBar"
+import Footer from "../home/Footer"
 import { css } from "../../utils/typography"
+
+import WaveFormDivider from "../../assets/waveFormDivider.svg"
 
 class Layout extends React.Component {
   render() {
@@ -17,11 +17,9 @@ class Layout extends React.Component {
             __html: css,
           }}
         />
-        <header className="px-10 sm:px-10 md:px-10 lg:px-16 xl:px-32">
-          {header}
-        </header>
+        <header className="px-4 sm:px-4 lg:px-8 xl:px-16">{header}</header>
         <main>{children}</main>
-        <Divider />
+        <WaveFormDivider />
         <Footer />
       </div>
     )

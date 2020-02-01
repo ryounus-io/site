@@ -19,6 +19,13 @@ Wordpress2016.overrideThemeStyles = () => {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },
+    "abbr[title]": {
+      color: `var(--nord10)`,
+      fontWeight: `bold`,
+      textDecoration: `none`,
+      cursor: `help`,
+      borderBottom: `3px dotted var(--nord10)`,
+    },
   }
 }
 

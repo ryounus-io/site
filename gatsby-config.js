@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `RYounus`,
     author: `Rahman Younus`,
-    description: `My experiences as a Full-stack Software Developer`,
+    description: `My experiences as a Software Developer`,
     siteUrl: `https://ryounus.dev/`,
+    icon: `https://ryounus.dev/assets/icon.png`,
     social: {
       twitter: `rahmancodes`,
     },
@@ -44,7 +45,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              showCaptions: true,
+              maxWidth: 650,
             },
           },
           {
@@ -53,10 +55,27 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
+          {
+            resolve: `gatsby-remark-acronyms`,
+            options: {
+              acronyms: {
+                CSS: `Cascading Style Sheets`,
+                HTML: `Hypertext Markup Language`,
+                PHP: `Hypertext Preprocessor`,
+                JS: `JavaScript`,
+                TS: `TypeScript`,
+                FOMO: `Fear Of Missing Out`,
+                "R&D": `Research & Development`,
+                "In'sha'Allah": `God willing`,
+                Alhamdulilah: `All the praise and thanks be to God`,
+              },
+            },
+          },
           `gatsby-remark-prismjs`,
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
           `gatsby-remark-reading-time`,
+          `gatsby-remark-a11y-emoji`,
         ],
       },
     },
@@ -75,7 +94,7 @@ module.exports = {
       options: {
         name: `RYounus Site`,
         short_name: `RYounus`,
-        description: `My experiences as a Full-stack Software Developer`,
+        description: `My experiences as a Software Developer`,
         start_url: `/`,
         background_color: `#E5E9F0`,
         theme_color: `#434C5E`,

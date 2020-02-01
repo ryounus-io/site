@@ -5507,6 +5507,21 @@ gatsby-react-router-scroll@^2.1.20:
     scroll-behavior "^0.9.10"
     warning "^3.0.0"
 
+gatsby-remark-a11y-emoji@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-a11y-emoji/-/gatsby-remark-a11y-emoji-1.0.1.tgz#4d0e37426e68fefbb99644d66a67583cf8a0df1e"
+  integrity sha512-7ezgQdSriswaSLAgEZLjD6nAFi8gBLYRxcLlaYRYSu3Mt1FZ2SAwbTRCufRQjmgltNnxc5RBfNItnPjbSI7XiQ==
+  dependencies:
+    emoji-regex "^8.0.0"
+    gemoji "^4.2.1"
+
+gatsby-remark-acronyms@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-acronyms/-/gatsby-remark-acronyms-1.1.0.tgz#056a8b67788cb6915ed4fc832fd16529d2ca964f"
+  integrity sha512-fppFQX5V5O/nTEG3ykXjUsNz0lE2mqgtCTn7zGMdcm1ADgkFF64HorwZM8KG4lNBBlYmA9EnKg7NK5/tNMCQ6g==
+  dependencies:
+    unist-util-visit "^1.4.1"
+
 gatsby-remark-copy-linked-files@^2.0.13:
   version "2.1.36"
   resolved "https://registry.yarnpkg.com/gatsby-remark-copy-linked-files/-/gatsby-remark-copy-linked-files-2.1.36.tgz#fdc22d99af67f8cfb7dd2c016dd6bc485af0a0fc"
@@ -5810,6 +5825,11 @@ gauge@~2.7.3:
     string-width "^1.0.1"
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
+
+gemoji@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.yarnpkg.com/gemoji/-/gemoji-4.2.1.tgz#88495f479a2e35a2c693e0ed321933372fc74c68"
+  integrity sha512-V9lUpRSn+KQGavZx8Pk+6mxG3kaz21ae2kTCXuT36KaRPNgYU8eHtj/RcUCNFVvmwppsYYz3nnNS9lmcP5kTsg==
 
 gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"

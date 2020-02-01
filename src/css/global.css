@@ -94,7 +94,7 @@ footer {
   width: 3rem;
   fill: var(--nord4)
 }
-.social-icon :hover {
+.social-item :hover {
   fill: var(--white)
 }
 
@@ -105,10 +105,25 @@ footer {
 .font-hightlight {
   background-color: var(--highlight-blue);
 }
+.gatsby-resp-image-figcaption {
+  text-align: center;
+  font-style: italic;
+  color: var(--nord2);
+  margin: 1rem;
+}
 
 /* Footer */
 .footer-text {
   color: var(--nord4);
+}
+
+footer {
+  margin: -1px;
+}
+
+footer a {
+  font-style: italic;
+  color: var(--nord5);
 }
 
 /* Hero Icon */
