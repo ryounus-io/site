@@ -17,7 +17,7 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <Seo title="All posts" />
         <div className="flex flex-wrap -mt-8">
-          <div className="w-full h-64 mb-8">
+          <div className="w-full mx-2 sm:mx-10 md:mx-20 lg:mx-20 xl:mx-40">
             <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
                     </span>
                     <p
                       dangerouslySetInnerHTML={{
-                        __html: node.frontmatter.description || node.excerpt,
+                        __html: node.excerpt,
                       }}
                     />
                   </div>
@@ -65,7 +65,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 250)
           fields {
             slug
           }
