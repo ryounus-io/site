@@ -2,8 +2,9 @@ module.exports = {
   siteMetadata: {
     title: `RYounus`,
     author: `Rahman Younus`,
-    description: `My experiences as a Full-stack Software Developer`,
+    description: `My experiences as a Software Developer`,
     siteUrl: `https://ryounus.dev/`,
+    icon: `https://ryounus.dev/assets/icon.png`,
     social: {
       twitter: `rahmancodes`,
     },
@@ -93,7 +94,7 @@ module.exports = {
       options: {
         name: `RYounus Site`,
         short_name: `RYounus`,
-        description: `My experiences as a Full-stack Software Developer`,
+        description: `My experiences as a Software Developer`,
         start_url: `/`,
         background_color: `#E5E9F0`,
         theme_color: `#434C5E`,

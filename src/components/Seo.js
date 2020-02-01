@@ -18,7 +18,11 @@ function Seo({ description, lang, meta, title }) {
           siteMetadata {
             title
             description
+            icon
             author
+            social {
+              twitter
+            }
           }
         }
       }
@@ -48,12 +52,20 @@ function Seo({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: site.siteMetadata.icon,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           name: `twitter:card`,
           content: `summary`,
+        },
+        {
+          name: `twitter:site`,
+          content: `@${site.siteMetadata.social.twitter}`,
         },
         {
           name: `twitter:creator`,
@@ -66,6 +78,10 @@ function Seo({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: site.siteMetadata.icon,
         },
       ].concat(meta)}
     />
