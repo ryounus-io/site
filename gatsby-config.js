@@ -11,12 +11,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-brotli",
-      options: {
-        extensions: ["css", "html", "js", "svg"],
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -111,5 +105,11 @@ module.exports = {
       },
     },
     `gatsby-plugin-postcss`,
+    {
+      resolve: "gatsby-plugin-brotli",
+      options: {
+        extensions: ["css", "html", "js", "svg"],
+      },
+    },
   ],
 }
