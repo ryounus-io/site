@@ -5,7 +5,7 @@ import Linkedin from "./partial/socials/Linkedin"
 
 function Footer() {
   return (
-    <footer className="flex-grow py-4">
+    <footer className="bg-primary-dark flex-grow py-4">
       <ul
         name="socials"
         className="flex items-end justify-center list-none ignore"

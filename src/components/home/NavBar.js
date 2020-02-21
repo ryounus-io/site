@@ -14,7 +14,7 @@ function NavBar() {
         <div>
           <Link
             to="/"
-            className="font-semibold text-gray-700 no-underline text-3xl hover:text-black no-underline tracking-tight"
+            className="font-semibold text-gray-700 dark:text-gray-100 no-underline text-3xl hover:text-black dark:hover:text-gray-500 no-underline tracking-tight"
           >
             RYounus
           </Link>
@@ -23,7 +23,7 @@ function NavBar() {
           <button
             onClick={handleButtonClick}
             type="button"
-            className="block text-gray-700 hover:text-black focus:text-gray"
+            className="block text-gray-700 dark:text-gray-100 hover:text-black dark:hover:text-gray-500 focus:text-gray"
           >
             <svg
               className="fill-current h-4 w-4"
@@ -55,13 +55,13 @@ function NavBar() {
       >
         <Link
           to="blog"
-          className="block px-2 py-1 font-semibold text-xl text-gray-700 hover:text-black sm:mx-2"
+          className="block px-2 py-1 font-semibold text-xl text-gray-700 dark:text-gray-100 hover:text-black dark:hover:text-gray-500 sm:mx-2"
         >
           Blog
         </Link>
         <a
           href="/assets/pdf/cv_v3_sept19_web.pdf"
-          className="block px-2 py-1 font-semibold text-xl text-gray-700 hover:text-black sm:mx-2"
+          className="block px-2 py-1 font-semibold text-xl text-gray-700 dark:text-gray-100 hover:text-black dark:hover:text-gray-500 sm:mx-2"
         >
           Resume
         </a>
