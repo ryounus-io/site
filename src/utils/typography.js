@@ -3,6 +3,16 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    "@media (prefers-color-scheme: dark)": {
+      body: {
+        color: `var(--nord4)`,
+      },
+      blockquote: {
+        color: `var(--nord5)`,
+        "border-left-color": `var(--nord3)`,
+      },
+    },
+
     "h2.heading": {
       marginTop: `0rem`,
     },

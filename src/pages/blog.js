@@ -29,15 +29,16 @@ class BlogIndex extends React.Component {
                     >
                       <Link
                         to={node.fields.slug}
-                        className="text-gray-700 hover:text-black mr-4"
+                        className="text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-gray-500 mr-4"
                       >
                         {title}
                       </Link>
                     </h3>
-                    <span className="text-gray-600">
+                    <span className="text-gray-600 dark:text-gray-500">
                       {node.frontmatter.date}
                     </span>
                     <p
+                      className="text-gray-700 dark:text-gray-300"
                       dangerouslySetInnerHTML={{
                         __html: node.excerpt,
                       }}

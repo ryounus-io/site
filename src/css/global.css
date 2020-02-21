@@ -23,31 +23,19 @@
 
 @tailwind utilities;
 
-/* html {
-  background-color: var(--nord1);
-}
-
-body {
-  background-color: var(--bg-colour);
-  color: var(--nord3);
-}
-
-footer {
-  background-color: var(--nord1);
-} */
-
-
-
 /* Text */
 .text-nord0 {
   color: var(--nord0);
 }
+
 .text-nord1 {
   color: var(--nord1);
 }
+
 .text-nord2 {
   color: var(--nord2);
 }
+
 .text-nord3 {
   color: var(--nord3);
 }
@@ -65,14 +53,17 @@ footer {
     vertical-align: middle;
     overflow: hidden;
 }
+
 .wave1 {
     fill: var(--nord3);
     transition: fill 400ms ease-in-out 0s;
 }
+
 .wave2 {
     fill: var(--nord2);
     transition: fill 400ms ease-in-out 0s;
 }
+
 .wave3 {
     fill: var(--nord1);
     transition: fill 400ms ease-in-out 0s;
@@ -84,6 +75,7 @@ footer {
   width: 3rem;
   fill: var(--nord4)
 }
+
 .social-item :hover {
   fill: var(--white)
 }
@@ -92,14 +84,21 @@ footer {
 .bottom-5 {
   bottom: 5px;
 }
+
 .font-hightlight {
   background-color: var(--highlight-blue);
 }
+
 .gatsby-resp-image-figcaption {
   text-align: center;
   font-style: italic;
-  color: var(--nord2);
   margin: 1rem;
+}
+
+@media (prefers-color-scheme: light) {
+  .gatsby-resp-image-figcaption {
+    color: var(--nord2);
+  }
 }
 
 /* Footer */
