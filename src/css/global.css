@@ -3,14 +3,14 @@
 /* Variables */
 :root {
   /* Polar Night */
-  --nord0: #2E3440;
-  --nord1: #3B4252;
-  --nord2: #434C5E;
-  --nord3: #4C566A;
+  --nord-0: #2E3440;
+  --nord-1: #3B4252;
+  --nord-2: #434C5E;
+  --nord-3: #4C566A;
   /* Snow Storm */
-  --nord4: #D8DEE9;
-  --nord5: #E5E9F0;
-  --nord6: #ECEFF4;
+  --nord-4: #D8DEE9;
+  --nord-5: #E5E9F0;
+  --nord-6: #ECEFF4;
   /* Misc */
   --white: #ffffff;
   --black: #000000;
@@ -22,23 +22,6 @@
 @tailwind components;
 
 @tailwind utilities;
-
-/* Text */
-.text-nord0 {
-  color: var(--nord0);
-}
-
-.text-nord1 {
-  color: var(--nord1);
-}
-
-.text-nord2 {
-  color: var(--nord2);
-}
-
-.text-nord3 {
-  color: var(--nord3);
-}
 
 /* Divider */
 .divider-wrapper {
@@ -55,17 +38,14 @@
 }
 
 .wave1 {
-    fill: var(--nord3);
     transition: fill 400ms ease-in-out 0s;
 }
 
 .wave2 {
-    fill: var(--nord2);
     transition: fill 400ms ease-in-out 0s;
 }
 
 .wave3 {
-    fill: var(--nord1);
     transition: fill 400ms ease-in-out 0s;
 }
 
@@ -73,7 +53,7 @@
 .social-icon {
   height: 2rem;
   width: 3rem;
-  fill: var(--nord4)
+  fill: var(--nord-4)
 }
 
 .social-item :hover {
@@ -85,10 +65,6 @@
   bottom: 5px;
 }
 
-.font-hightlight {
-  background-color: var(--highlight-blue);
-}
-
 .gatsby-resp-image-figcaption {
   text-align: center;
   font-style: italic;
@@ -97,13 +73,13 @@
 
 @media (prefers-color-scheme: light) {
   .gatsby-resp-image-figcaption {
-    color: var(--nord2);
+    color: var(--nord-2);
   }
 }
 
 /* Footer */
 .footer-text {
-  color: var(--nord4);
+  color: var(--nord-4);
 }
 
 footer {
@@ -112,7 +88,7 @@ footer {
 
 footer a {
   font-style: italic;
-  color: var(--nord5);
+  color: var(--nord-5);
 }
 
 /* Hero Icon */

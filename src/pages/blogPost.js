@@ -32,7 +32,7 @@ class BlogPost extends React.Component {
                   marginTop: rhythm(-1),
                 }}
               >
-                <div className="dark:text-gray-500 text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-nord3">
+                <div className="dark:text-gray-500 text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-nord-3">
                   <span>{post.frontmatter.date}</span>
                   <span className="px-3">|</span>
                   <span>{post.fields.readingTime.text}</span>
