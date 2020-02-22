@@ -24,6 +24,7 @@ function NavBar() {
             onClick={handleButtonClick}
             type="button"
             className="block text-gray-700 dark:text-gray-100 hover:text-black dark:hover:text-gray-500 focus:text-gray"
+            aria-label="Menu"
           >
             <svg
               className="fill-current h-4 w-4"
