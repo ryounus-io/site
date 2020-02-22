@@ -5,7 +5,7 @@ import Linkedin from "./partial/socials/Linkedin"
 
 function Footer() {
   return (
-    <footer className="flex-grow py-4">
+    <footer className="bg-primary-dark -mt-2 dark:bg-nord-3 flex-grow py-4">
       <ul
         name="socials"
         className="flex items-end justify-center list-none ignore"
@@ -16,9 +16,11 @@ function Footer() {
       </ul>
 
       <div className="flex justify-center p-4">
-        <span className="footer-text">
+        <span className="text-nord-4">
           © {new Date().getFullYear()}, Built with {` `}{" "}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a className="italic text-nord-5" href="https://www.gatsbyjs.org">
+            Gatsby
+          </a>
         </span>
       </div>
     </footer>

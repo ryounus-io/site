@@ -3,6 +3,16 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    "@media (prefers-color-scheme: dark)": {
+      body: {
+        color: `var(--nord-4)`,
+      },
+      blockquote: {
+        color: `var(--nord-5)`,
+        "border-left-color": `var(--nord-3)`,
+      },
+    },
+
     "h2.heading": {
       marginTop: `0rem`,
     },
@@ -20,11 +30,11 @@ Wordpress2016.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     "abbr[title]": {
-      color: `var(--nord10)`,
+      color: `var(--nord-10)`,
       fontWeight: `bold`,
       textDecoration: `none`,
       cursor: `help`,
-      borderBottom: `3px dotted var(--nord10)`,
+      borderBottom: `3px dotted var(--nord-10)`,
     },
   }
 }
@@ -33,7 +43,6 @@ delete Wordpress2016.googleFonts
 
 const typography = new Typography(Wordpress2016)
 
-export default typography
 export const rhythm = typography.rhythm
 export const scale = typography.scale
 export const css = typography.toString()

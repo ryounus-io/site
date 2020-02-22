@@ -11,12 +11,6 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: "gatsby-plugin-brotli",
-      options: {
-        extensions: ["css", "html", "js", "svg"],
-      },
-    },
-    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content/blog`,
@@ -104,12 +98,12 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-postcss`,
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: "gatsby-plugin-brotli",
       options: {
-        pathToConfigModule: `src/utils/typography`,
+        extensions: ["css", "html", "js", "svg"],
       },
     },
-    `gatsby-plugin-postcss`,
   ],
 }

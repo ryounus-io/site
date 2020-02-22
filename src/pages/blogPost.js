@@ -21,7 +21,7 @@ class BlogPost extends React.Component {
         <div className="flex flex-wrap -mt-8">
           <div className="w-full mx-2 sm:mx-10 md:mx-20 lg:mx-20 xl:mx-40">
             <div className="px-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
-              <h1 className="mb-8 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+              <h1 className="mb-8 dark:text-gray-400 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
                 {post.frontmatter.title}
               </h1>
               <div
@@ -32,7 +32,7 @@ class BlogPost extends React.Component {
                   marginTop: rhythm(-1),
                 }}
               >
-                <div className="text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-nord3">
+                <div className="dark:text-gray-500 text-lg sm:text-xl md:text-xl lg:text-xl xl:text-xl text-nord-3">
                   <span>{post.frontmatter.date}</span>
                   <span className="px-3">|</span>
                   <span>{post.fields.readingTime.text}</span>

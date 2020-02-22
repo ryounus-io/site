@@ -38,7 +38,7 @@ function Bio() {
               }}
             />
             <div>
-              <span className="block">
+              <span className="block dark:text-gray-400">
                 Written by <strong>{author}</strong>
               </span>
               <a href={`https://twitter.com/${social.twitter}`}>
