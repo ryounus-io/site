@@ -5,11 +5,11 @@ Wordpress2016.overrideThemeStyles = () => {
   return {
     "@media (prefers-color-scheme: dark)": {
       body: {
-        color: `var(--nord4)`,
+        color: `var(--nord-4)`,
       },
       blockquote: {
-        color: `var(--nord5)`,
-        "border-left-color": `var(--nord3)`,
+        color: `var(--nord-5)`,
+        "border-left-color": `var(--nord-3)`,
       },
     },
 
@@ -30,11 +30,11 @@ Wordpress2016.overrideThemeStyles = () => {
       boxShadow: `none`,
     },
     "abbr[title]": {
-      color: `var(--nord10)`,
+      color: `var(--nord-10)`,
       fontWeight: `bold`,
       textDecoration: `none`,
       cursor: `help`,
-      borderBottom: `3px dotted var(--nord10)`,
+      borderBottom: `3px dotted var(--nord-10)`,
     },
   }
 }
