@@ -43,7 +43,6 @@ delete Wordpress2016.googleFonts
 
 const typography = new Typography(Wordpress2016)
 
-export default typography
 export const rhythm = typography.rhythm
 export const scale = typography.scale
 export const css = typography.toString()
