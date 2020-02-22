@@ -34,7 +34,7 @@
 
 @tailwind utilities;
 
-/* Divider */
+/* Wave Divider */
 .divider-wrapper {
     display: block;
     bottom: -1px;
@@ -44,7 +44,6 @@
     background-color: transparent;
     pointer-events: none;
     user-select: none;
-    vertical-align: middle;
     overflow: hidden;
 }
 
@@ -64,18 +63,9 @@
 .social-icon {
   height: 2rem;
   width: 3rem;
-  fill: var(--nord-4)
 }
 
-.social-item :hover {
-  fill: var(--white)
-}
-
-/* Misc */
-.bottom-5 {
-  bottom: 5px;
-}
-
+/* ImageCaption Plugin */
 .gatsby-resp-image-figcaption {
   text-align: center;
   font-style: italic;
@@ -86,20 +76,6 @@
   .gatsby-resp-image-figcaption {
     color: var(--nord-2);
   }
-}
-
-/* Footer */
-.footer-text {
-  color: var(--nord-4);
-}
-
-footer {
-  margin: -1px;
-}
-
-footer a {
-  font-style: italic;
-  color: var(--nord-5);
 }
 
 /* Hero Icon */

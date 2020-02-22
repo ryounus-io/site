@@ -11,7 +11,7 @@ class Layout extends React.Component {
     const header = <NavBar />
 
     return (
-      <div className="bg-primary-light dark:bg-primary-dark">
+      <div className="bg-primary-light dark:bg-primary-dark h-screen">
         <style
           dangerouslySetInnerHTML={{
             __html: css,
