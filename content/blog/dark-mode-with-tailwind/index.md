@@ -21,6 +21,8 @@ Tailwind CSS is a `utility-first` CSS framework for rapidly building custom solu
 
 So, in the above code block, I have applied several utilities to the div element, all applied as several separated *utility classes*. In a more traditional setting, you would need define your own classes with all those properties, give those meaningful names and then use them. You may not see a big benefit in having all the utility classes pre-defined but what it allows you to do is rapidly build and prototype interfaces.
 
+![Meaningful Variable](./assets/meaningful-variable.jpg "There's only 2 hard problems in Programming - 1) cache invalidation 2) naming things 🤣")
+
 This utility first approach can however lead to long and ugly class names in your mark-up, but it allows you to develop really quickly and efficiently without writing any custom CSS. I believe it’s one of those concepts that you have to try out for yourself to appreciate. In the Tailwind docs, Adam Wathan, the creator of Tailwind, has specifically created a page to address `utility-first` and its benefits and criticisms, I would recommended doing some [further reading](https://tailwindcss.com/docs/utility-first)
 
 My whole site uses this `utility-first` approach to styling and because of it I have had to use very little custom CSS. Pretty much all of it is predefined for me to use by Tailwind. Below is a snippet of my hero component on my site
