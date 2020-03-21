@@ -3,7 +3,7 @@ title: Adding dark mode support with a one line change
 date: "2020-03-21T15:00:00.000Z"
 description: I implemented dark mode *support* on my site using Tailwind with a one line addition. 🌗🚀
 ---
-> Disclaimer: Even though I consider myself a full-stack developer, I believe my backend skills are more dominant than my frontend ones. However, I don’t shy away from any frontend work. I embrace it for its own unique challenges. This post is based on my personal experience on styling my site and the approach I took. I’m sure there are other ways this could have been implemented and there may even be better solutions but this is my way.
+> Disclaimer: Even though I consider myself a full-stack developer, I believe my backend skills are more dominant than my frontend ones. However, I don’t shy away from any frontend work. I embrace it for its own unique challenges. This post is based on my personal experience on styling my site and the approach I took. I’m sure there are other ways this could have been implemented and there may even be better solutions. But this is my way.
 
 **TL;DR** I implemented dark mode *support* on my site using Tailwind with a one line addition. 🌗🚀
 
@@ -36,7 +36,7 @@ My whole site uses this `utility-first` approach to styling. Because of this I h
 </h3>
 ```
 
-As you can see, I have quite a few classes in my mark-up which leads to a more expressive way of styling as you know exactly what each class does - each class has a single responsibility. From the example above, you can also see that all screen-size breakpoints are defined so when those conditions apply the browser will automatically switch to those classes instead. Again, using the above snippet as an example you will notice that if a `sm` device is used it will use the `text-3xl` class. Whereas if I had a `xl` device I would automatically be using the `text-6xl` class. It is extremely powerful and efficient to be able to define these classes across device breakpoints in such an expressive manner. I no longer have to spend time messing with naming schemes for classes, no need for large custom CSS files and therefore no more slower development. 💨🚀
+As you can see, I have quite a few classes in my mark-up which leads to a more expressive way of styling as you know exactly what each class does - each class has a single responsibility. From the example above, you can also see that all screen-size breakpoints are defined so when those conditions apply the browser will automatically switch to those classes instead. Again, using the above snippet as an example you will notice that if an `sm` device is used it will use the `text-3xl` class. Whereas if I had an `xl` device I would automatically be using the `text-6xl` class. It is extremely powerful and efficient to be able to define these classes across device breakpoints in such an expressive manner. I no longer have to spend time messing with naming schemes for classes, no need for large custom CSS files and therefore no more slower development. 💨🚀
 
 ### What is Dark mode
 
