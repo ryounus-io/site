@@ -1,6 +1,6 @@
 ---
 title: Adding dark mode support with a one line change
-date: "2020-03-16T15:00:00.000Z"
+date: "2020-03-21T15:00:00.000Z"
 description: How I very quickly and efficiently added dark mode support to my site
 ---
 > Disclaimer: Even though I consider myself a full-stack developer, I believe my backend skills are more dominant than my frontend ones. However, I don’t shy away from any frontend work. I embrace it for its own unique challenges. This post is based on my personal experience on styling my site and the approach I took. I’m sure there are other ways this could have been implemented and there may even be better solutions but this is my way.
