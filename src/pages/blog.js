@@ -22,28 +22,31 @@ class BlogIndex extends React.Component {
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (
-                  <div key={node.fields.slug}>
+                  <Link
+                    key={node.fields.slug}
+                    to={node.fields.slug}
+                    className="block text-gray-700 dark:text-gray-200 mr-4 no-underline hover:text-nord-10 dark:hover:text-nord-13"
+                  >
                     <h3
                       className="leading-relaxed sm:leading-relaxed md:leading-normal"
                       style={{ marginBottom: rhythm(1 / 4) }}
                     >
-                      <Link
-                        to={node.fields.slug}
-                        className="text-gray-700 dark:text-gray-200 hover:text-black dark:hover:text-gray-500 mr-4"
-                      >
-                        {title}
-                      </Link>
+                      {title}
                     </h3>
-                    <span className="text-gray-600 dark:text-gray-500">
-                      {node.frontmatter.date}
+                    <span className="text-nord-3 dark:text-nord-4">
+                      <span>{node.frontmatter.date}</span>
+                      <span className="px-3">|</span>
+                      <span className="text-nord-3 dark:text-nord-8">
+                        {node.fields.readingTime.text}
+                      </span>
                     </span>
                     <p
-                      className="text-gray-700 dark:text-gray-300"
+                      className="text-nord-2 dark:text-nord-4"
                       dangerouslySetInnerHTML={{
                         __html: node.excerpt,
                       }}
                     />
-                  </div>
+                  </Link>
                 )
               })}
             </div>
@@ -66,7 +69,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 300)
           fields {
             slug
           }
@@ -74,6 +77,11 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+          }
+          fields {
+            readingTime {
+              text
+            }
           }
         }
       }
