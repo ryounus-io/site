@@ -6,7 +6,7 @@ import Linkedin from "./partial/socials/Linkedin"
 
 function Footer() {
   return (
-    <footer className="bg-primary-dark -mt-2 dark:bg-nord-3 flex-grow py-4">
+    <footer className="bg-nord-1 -mt-2 dark:bg-nord-3 flex-grow py-4">
       <ul
         name="socials"
         className="flex items-end justify-center list-none ignore"
