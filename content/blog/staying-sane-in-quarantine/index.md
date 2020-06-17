@@ -45,6 +45,6 @@ Another past time of mine was picking up gaming as a habit, in recent years I ha
 
 Lastly, I wanted to mention some learning which I have decided to dedicate time on. I have picked up a `Arduino Learning Starter Kit` from Amazon to allow me to fulfill my childhood interest in electronics with my day to day work of coding stuff together. I have been messing with the kit and have been going through the different tutorials to make cool inventions. I have always had an interest in electronics and if I didn't pick Computing as my field of study and work, I would've been doing something in the electronics field. This might be a little blasphemous as a Software Developer but I find the sense of achievement you go through when you build something physically in a 3D space much better than when I code something together on my laptop. 
 
-![Test Video](./assets/fading-rgb-led.mp4)
+https://twitter.com/rahmancodes/status/1273289224628908037
 
 I have also been dedicating some time to learning [GoLang](https://golang.org/) and trying to get to grips with all its concepts, look out for a blog post around that in the _near future_ 🚀

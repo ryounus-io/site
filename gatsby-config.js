@@ -50,6 +50,17 @@ module.exports = {
             },
           },
           {
+            resolve: `gatsby-remark-embedder`,
+            options: {
+              customTransformers: [
+                // Your custom transformers
+              ],
+              services: {
+                // The service-specific options by the name of the service
+              },
+            },
+          },
+          {
             resolve: `gatsby-remark-acronyms`,
             options: {
               acronyms: {
@@ -99,6 +110,7 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`, // Todo: Update the correct icon when ready
       },
     },
+    `gatsby-plugin-twitter`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,
