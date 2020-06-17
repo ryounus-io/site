@@ -19,6 +19,9 @@ class BlogIndex extends React.Component {
         <div className="flex flex-wrap -mt-8">
           <div className="w-full px-2 sm:px-10 md:px-20 lg:px-20 xl:px-40">
             <div className="px-10 py-40 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
+              <h2 className="text-nord-3 dark:text-nord-8 underline">
+                All posts
+              </h2>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
                 return (

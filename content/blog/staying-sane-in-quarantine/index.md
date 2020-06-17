@@ -1,6 +1,6 @@
 ---
 title: Staying sane in Quarantine
-date: "2020-04-28T16:00:00.000Z"
+date: "2020-06-17T16:00:00.000Z"
 description: Surviving and Combating Quarantine Fatigue
 ---
 
