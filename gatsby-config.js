@@ -50,14 +50,9 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-embedder`,
+            resolve: "@weknow/gatsby-remark-twitter",
             options: {
-              customTransformers: [
-                // Your custom transformers
-              ],
-              services: {
-                // The service-specific options by the name of the service
-              },
+              align: `center`,
             },
           },
           {
@@ -110,7 +105,6 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`, // Todo: Update the correct icon when ready
       },
     },
-    `gatsby-plugin-twitter`,
     `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-postcss`,

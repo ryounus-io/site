@@ -12,7 +12,7 @@ description: Surviving and Combating Quarantine Fatigue
 
 ### Preface
 
-I've been taking a bit of a hiatus the past month or so, and have not been blogging as much as I wanted to. This break was due to the current COVID situation and also it being Ramadan last month, I was occupied with fasting and spending a lot of my time focusing on my spirituality.
+I've been taking a bit of a hiatus the past month or so, and have not been blogging as much as I wanted to. This break was due to the current `COVID-19` situation and also it being Ramadan last month, I was occupied with fasting and spending a lot of my time focusing on my spirituality.
 
 A blog post is long awaited and I believe the topic I chose is quite timely and suitable for the current circumstances we are in.
 Unless you haven been living under a rock, you will know the tough and unprecedented times we are going through, I will try and outline what I've been doing to stay somewhat sane 🤪
@@ -25,7 +25,7 @@ Fortunately for me I have not been affected as badly as others, I'm still workin
 
 I think a lot of us in the tech industry are very fortunate as we can do most of our work from home. Being able to work from home is a great advantage but it does come with social limitations which we take for granted when in an office environment. I think a lot of developers are not very socially active in the first place so this lockdown is negatively affecting a lot of us in that way.
 
-![Planning](./assets/quarantine-programmers.jpg)
+![Programmers in Quarantine](./assets/quarantine-programmers.jpg)
 
 ### What I've been doing
 
