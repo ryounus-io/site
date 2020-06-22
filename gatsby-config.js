@@ -50,6 +50,12 @@ module.exports = {
             },
           },
           {
+            resolve: "@weknow/gatsby-remark-twitter",
+            options: {
+              align: `center`,
+            },
+          },
+          {
             resolve: `gatsby-remark-acronyms`,
             options: {
               acronyms: {
