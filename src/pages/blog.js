@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/partials/Layout"
 import Seo from "../components/Seo"
+import Pagination from "../components/blog/Pagination"
 import { rhythm } from "../utils/typography"
 
 import "../css/global.css"
@@ -12,6 +13,7 @@ class BlogIndex extends React.Component {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
     const posts = data.allMarkdownRemark.edges
+    const { limit, skip, numOfPages, currentPage } = this.props.pageContext
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
@@ -52,6 +54,7 @@ class BlogIndex extends React.Component {
                   </Link>
                 )
               })}
+              <Pagination numOfPages={numOfPages} currentPage={currentPage} />
             </div>
           </div>
         </div>
