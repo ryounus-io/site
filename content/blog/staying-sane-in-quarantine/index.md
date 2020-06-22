@@ -15,13 +15,13 @@ description: Surviving and Combating Quarantine Fatigue
 I've been taking a bit of a hiatus the past month or so, and have not been blogging as much as I wanted to. This break was due to the current `COVID-19` situation and because it was Ramadan last month. I was mostly occupied with fasting and spending a lot of my time focusing on my spirituality.
 
 A blog post is long overdue and I believe the topic I have chosen is quite timely and suitable for the current circumstances we are in.
-Unless you haven been living under a rock, you will know the tough and unprecedented times we are going through, I will try and outline what I've been doing to stay somewhat sane 🤪
+Unless you haven been living under a rock, you will know the tough and unprecedented times we are going through. I will try and outline what I've been doing to stay somewhat sane 🤪
 
 _This post will be a lot shorter and more concise than some of my previous blog posts._
 
 ### My Circumstance
 
-Fortunately for me I have not been affected as badly as others. I have been working throughout lockdown, albeit from home. This transition to working from home has not been very difficult for me as my work place has allowed us to WFH in the past, so was quite a minimal change in comparison to other people.
+Fortunately for me I have not been affected as badly as others. I have been working throughout lockdown, albeit from home. This transition to working from home has not been very difficult for me as my work place has allowed us to WFH in the past, so it has been quite a minimal change in comparison to other people.
 
 I think a lot of us in the tech industry are very fortunate as we can do most of our work from home. Being able to work from home is a great advantage but it does come with social limitations which we take for granted when in an office environment. I think a lot of developers are not very social in the first place so this lockdown is negatively affecting a lot of us in that way.
 
@@ -39,7 +39,7 @@ I have quite enjoyed our pub quizzes as they provide good entertainment and a bi
 
 #### Home
 
-Since we _have been_ in lockdown for the past few months, it was important to find hobbies and activities to keep myself occupied with. The first of these activities that I picked up was to go on regular walks during my lunch breaks at work, since lockdown was in affect, recreational places such as gyms were closed. This meant that I had very little physical activity in my daily routine. This little addition helped me get outside, get fresh air and enjoy the sun whilst it was shinning. For some reason it seemed like the weather was really good with the sun out on most days whilst in lockdown, but when lockdown finally eased the rainy British weather has unfortunately returned. 🤔
+Since we _have been_ in lockdown for the past few months, it was important to find hobbies and activities to keep myself occupied with. The first of these activities that I picked up was to go on regular walks during my lunch breaks at work. Since lockdown was in affect, recreational places such as gyms were closed. This meant that I had very little physical activity in my daily routine. This little addition helped me get outside, get fresh air and enjoy the sun whilst it was shinning. For some reason it seemed like the weather was really good with the sun out on most days whilst in lockdown, but when lockdown finally eased the rainy British weather has unfortunately returned. 🤔
 
 Another past time of mine was picking up gaming as a habit. In recent years I have not gamed much, with my last proper game console was a PS2 or a Wii. I didn't really bother with the newer stuff until now. I just never really had the time to dedicate to gaming religiously but with the lockdown in effect I suddenly had many hours to spend catching up on a lot classic gaming titles that I had missed out on. I bought a PS4 and a fair few `PS Hit` titles including the games from the `Uncharted series`, `The Last of Us` and `God Of War` to name a few. I think gaming was a really good past time for me during quarantine as it didn’t allow boredom to consume me and kept me entertained with great gripping storylines.
 
