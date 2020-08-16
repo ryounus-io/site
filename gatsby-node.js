@@ -4,7 +4,6 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const listings = path.resolve(`./src/pages/listing.js`)
   return graphql(
     `
       {
@@ -30,6 +29,13 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 
+    // Link Listing page
+    createPage({
+      path: "/blog",
+      component: path.resolve(`./src/pages/listing.js`),
+      context: {},
+    })
+
     // Create blog posts pages.
     const posts = result.data.allMarkdownRemark.edges
 
@@ -39,7 +45,7 @@ exports.createPages = ({ graphql, actions }) => {
 
       createPage({
         path: post.node.fields.slug,
-        component: listings,
+        component: path.resolve(`./src/pages/post.js`),
         context: {
           slug: post.node.fields.slug,
           previous,
@@ -61,7 +67,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
-      value: `/$blog${value}`,
+      value: `/blog${value}`,
     })
   }
 }
