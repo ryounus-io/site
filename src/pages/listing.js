@@ -24,6 +24,7 @@ class Listing extends React.Component {
               </h2>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
+                const tags =  node.frontmatter.tags ? node.frontmatter.tags.split(',') : []
                 return (
                   <Link
                     key={node.fields.slug}
@@ -44,17 +45,17 @@ class Listing extends React.Component {
                         {node.fields.readingTime.text}
                       </span>
                     </span>
+                    {tags.length > 0 &&
                     <div class="flex justify-start py-1">
-                      <div class="bg-nord-3 p-1 rounded text-white mr-3 text-xs">
-                        Tag 1
-                      </div>
-                      <div class="bg-nord-3 p-1 rounded text-white mr-3 text-xs">
-                        Tag 2
-                      </div>
-                      <div class="bg-nord-3 p-1 rounded text-white mr-3 text-xs">
-                        Tag 3
-                      </div>
+                      {tags.map((tag) => {
+                        return(
+                          <div class="bg-nord-3 p-1 rounded text-white mr-3 text-xs">
+                            {tag.trim()}
+                          </div>
+                        )
+                      })}
                     </div>
+                    }
                     <p
                       className="text-nord-2 dark:text-nord-4"
                       dangerouslySetInnerHTML={{
@@ -92,6 +93,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
           fields {
             readingTime {

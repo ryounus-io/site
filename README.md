@@ -1,36 +1,19 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
+# RYounus - Personal blog site
+
+<p align="center"> 
+    <img src="static/assets/icon.png" alt="Logo" width="65%">
 </p>
-<h1 align="center">
-  RYounus
-</h1>
 
-This site was built using a starter found on the gatsby docs. The starter has been modified to include new features to meet my personal requirements. I've planned to added a landing page and resume page to meet requirements of it being used as a personal site. Tailwind will be used as the styling library of choice in this project.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/71e707c9-f5c8-4b6e-947e-824f0a6d2660/deploy-status)](https://app.netlify.com/sites/ryounus/deploys)
 
-## Features
-- Full-featured blog
-- Support for an RSS feed
-- Google Analytics support
-- SEO optimised
-- Automatic optimization of images in Markdown posts
-- Support for code syntax highlighting
-- Includes plugins for easy, beautiful typography
-- Includes React Helmet to allow editing site meta tags
-- Includes plugins for offline support out of the box
-- Added Brotli support
+This is the _source-code_ for [ryounus.dev](https://www.ryounus.dev/), my _personal website_ that I use to host my __blog__ and __landing page__. 🎨🖌️
 
-## Todo
-- [x] Add Tailwind
-- [ ] Setup purgeCSS tailwind config
-- [x] Basic Landing Page
-- [x] Make Landing fully responsive
-- [ ] Make landing more dynamic with animations
-- [ ] Re-do navbar links to have active class and a way to add class if on certain url
-- [ ] Re-design blog to follow landing page style
-- [x] Add Resume pdf for mean time on resume link
-- [ ] Create a proper html Resume page to replace pdf
+It is built using [Gatsby](https://www.gatsbyjs.com/) and proudly hosted on [Netlify](https://www.netlify.com/). 🧑‍🚀🚀
 
-## About
-This will be the personal site of [mine](https://github.com/rahman95) when completed and was built using the [gatsby-starter-blog](https://gatsby-starter-blog-demo.netlify.com/).
+## Links
+- [Landing Page](https://www.ryounus.dev/) 
+- [Blog Posts](https://www.ryounus.dev/blog/)
+
+<p align="center"> 
+  🎩🪄✨
+</p>
