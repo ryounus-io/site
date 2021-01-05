@@ -20,7 +20,7 @@ function BlogTags({ tags }) {
   return (
     <>
       {tags.map((tag, index) => (
-          <div key={index} className="bg-nord-3 p-1 rounded text-white mr-3 text-xs">
+          <div key={index} className="bg-nord-3 p-1 rounded text-white mr-3 mb-2 text-xs">
             {tag.trim()}
           </div>
         )
@@ -47,6 +47,7 @@ class Listing extends React.Component {
               {posts.map(({ node }, index) => {
                 const title = node.frontmatter.title || node.fields.slug
                 const tags =  node.frontmatter.tags ? node.frontmatter.tags.split(',') : []
+                const description = node.excerpt.length > 0 ? node.excerpt : node.frontmatter.description
                 return (
                   <Link
                     key={node.fields.slug}
@@ -69,14 +70,14 @@ class Listing extends React.Component {
                       </span>
                     </span>
                     {tags.length > 0 &&
-                      <div className="flex justify-start py-1">
+                      <div className="flex flex-wrap justify-start py-1">
                         <BlogTags tags={tags} />
                       </div>
                     }
                     <p
                       className="text-nord-2 dark:text-nord-4"
                       dangerouslySetInnerHTML={{
-                        __html: node.excerpt,
+                        __html: description,
                       }}
                     />
                   </Link>
