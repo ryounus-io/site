@@ -44,7 +44,7 @@ class Listing extends React.Component {
               <h2 className="text-nord-3 dark:text-nord-8 underline">
                 All posts
               </h2>
-              {posts.map(({ node }, value) => {
+              {posts.map(({ node }, index) => {
                 const title = node.frontmatter.title || node.fields.slug
                 const tags =  node.frontmatter.tags ? node.frontmatter.tags.split(',') : []
                 return (
@@ -61,7 +61,7 @@ class Listing extends React.Component {
                     </h3>
 
                     <span className="text-nord-3 dark:text-nord-4">
-                      {value === 0 && <LatestPostTag />}
+                      {index === 0 && <LatestPostTag />}
                       <span>{node.frontmatter.date}</span>
                       <span className="px-3">|</span>
                       <span className="text-nord-3 dark:text-nord-8">
@@ -69,9 +69,9 @@ class Listing extends React.Component {
                       </span>
                     </span>
                     {tags.length > 0 &&
-                    <div className="flex justify-start py-1">
-                      <BlogTags tags={tags} />
-                    </div>
+                      <div className="flex justify-start py-1">
+                        <BlogTags tags={tags} />
+                      </div>
                     }
                     <p
                       className="text-nord-2 dark:text-nord-4"
