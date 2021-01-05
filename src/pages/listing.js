@@ -7,6 +7,28 @@ import { rhythm } from "../utils/typography"
 
 import "../css/global.css"
 
+function LatestPostTag() {
+  return (
+    <>
+      <span className="px-2 bg-nord-10 dark:bg-nord-13 text-white dark:text-black">Latest</span>
+      <span className="px-3">|</span>
+    </>
+  );
+}
+
+function BlogTags({ tags }) {
+  return (
+    <>
+      {tags.map((tag, index) => (
+          <div key={index} className="bg-nord-3 p-1 rounded text-white mr-3 text-xs">
+            {tag.trim()}
+          </div>
+        )
+      )}
+    </>
+  )
+}
+
 class Listing extends React.Component {
   render() {
     const { data } = this.props
@@ -22,7 +44,7 @@ class Listing extends React.Component {
               <h2 className="text-nord-3 dark:text-nord-8 underline">
                 All posts
               </h2>
-              {posts.map(({ node }) => {
+              {posts.map(({ node }, index) => {
                 const title = node.frontmatter.title || node.fields.slug
                 const tags =  node.frontmatter.tags ? node.frontmatter.tags.split(',') : []
                 return (
@@ -39,6 +61,7 @@ class Listing extends React.Component {
                     </h3>
 
                     <span className="text-nord-3 dark:text-nord-4">
+                      {index === 0 && <LatestPostTag />}
                       <span>{node.frontmatter.date}</span>
                       <span className="px-3">|</span>
                       <span className="text-nord-3 dark:text-nord-8">
@@ -46,15 +69,9 @@ class Listing extends React.Component {
                       </span>
                     </span>
                     {tags.length > 0 &&
-                    <div class="flex justify-start py-1">
-                      {tags.map((tag) => {
-                        return(
-                          <div class="bg-nord-3 p-1 rounded text-white mr-3 text-xs">
-                            {tag.trim()}
-                          </div>
-                        )
-                      })}
-                    </div>
+                      <div className="flex justify-start py-1">
+                        <BlogTags tags={tags} />
+                      </div>
                     }
                     <p
                       className="text-nord-2 dark:text-nord-4"
