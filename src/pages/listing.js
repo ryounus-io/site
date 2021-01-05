@@ -7,7 +7,7 @@ import { rhythm } from "../utils/typography"
 
 import "../css/global.css"
 
-class BlogIndex extends React.Component {
+class Listing extends React.Component {
   render() {
     const { data } = this.props
     const siteTitle = data.site.siteMetadata.title
@@ -18,17 +18,18 @@ class BlogIndex extends React.Component {
         <Seo title="All posts" />
         <div className="flex flex-wrap -mt-8">
           <div className="w-full px-2 sm:px-10 md:px-20 lg:px-20 xl:px-40">
-            <div className="px-10 py-40 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
+            <div className="px-10 py-10 sm:px-10 md:px-12 lg:px-20 xl:px-40 xl:mb-5">
               <h2 className="text-nord-3 dark:text-nord-8 underline">
                 All posts
               </h2>
               {posts.map(({ node }) => {
                 const title = node.frontmatter.title || node.fields.slug
+                const tags =  node.frontmatter.tags ? node.frontmatter.tags.split(',') : []
                 return (
                   <Link
                     key={node.fields.slug}
                     to={node.fields.slug}
-                    className="block text-gray-700 dark:text-gray-200 mr-4 no-underline hover:text-nord-10 dark:hover:text-nord-13"
+                    className="block text-gray-700 dark:text-gray-200 no-underline hover:text-nord-10 dark:hover:text-nord-13"
                   >
                     <h3
                       className="leading-relaxed sm:leading-relaxed md:leading-normal"
@@ -36,6 +37,7 @@ class BlogIndex extends React.Component {
                     >
                       {title}
                     </h3>
+
                     <span className="text-nord-3 dark:text-nord-4">
                       <span>{node.frontmatter.date}</span>
                       <span className="px-3">|</span>
@@ -43,6 +45,17 @@ class BlogIndex extends React.Component {
                         {node.fields.readingTime.text}
                       </span>
                     </span>
+                    {tags.length > 0 &&
+                    <div class="flex justify-start py-1">
+                      {tags.map((tag) => {
+                        return(
+                          <div class="bg-nord-3 p-1 rounded text-white mr-3 text-xs">
+                            {tag.trim()}
+                          </div>
+                        )
+                      })}
+                    </div>
+                    }
                     <p
                       className="text-nord-2 dark:text-nord-4"
                       dangerouslySetInnerHTML={{
@@ -60,7 +73,7 @@ class BlogIndex extends React.Component {
   }
 }
 
-export default BlogIndex
+export default Listing
 
 export const pageQuery = graphql`
   query {
@@ -80,6 +93,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
           fields {
             readingTime {

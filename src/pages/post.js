@@ -1,12 +1,12 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/blog/Bio"
+import Bio from "../components/post/Bio"
 import Layout from "../components/partials/Layout"
 import Seo from "../components/Seo"
 import { rhythm, scale } from "../utils/typography"
 
-class BlogPost extends React.Component {
+class Post extends React.Component {
   render() {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
@@ -80,7 +80,7 @@ class BlogPost extends React.Component {
   }
 }
 
-export default BlogPost
+export default Post
 
 export const pageQuery = graphql`
   query($slug: String) {

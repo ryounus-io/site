@@ -34,6 +34,7 @@ function Seo({ description, lang, meta, title }) {
   return (
     <Helmet
       htmlAttributes={{
+        class: 'bg-primary-light dark:bg-primary-dark',
         lang,
       }}
       title={title}

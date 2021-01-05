@@ -34,6 +34,18 @@
 
 @tailwind utilities;
 
+html, body, #___gatsby {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+div[role="group"][tabindex] {
+  height: 100%;
+}
+
 /* Wave Divider */
 .divider-wrapper {
     display: block;
