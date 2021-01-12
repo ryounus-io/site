@@ -1,7 +1,7 @@
 ---
 title: How redundancy led me to a better job
 date: "2020-02-01T15:00:00.000Z"
-description: My journey navigating through redundancy and finding a better job
+description: I was unfortunately made redundant towards the back end of last year. In this post I will discuss my personal journey navigating through redundancy and finding a better job for my career 💪💻
 tags: redundancy, recruitment, job-search, DAZN, 2020
 ---
 > Disclaimer: I fully understand that I am a privileged individual who has a university degree and multiple years of experience backing me, I recognise that others who have been made redundant may have struggled a lot more in getting another job, this post does not intend to make light of their struggles.
