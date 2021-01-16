@@ -1,7 +1,7 @@
 ---
 title: Staying sane in Quarantine
 date: "2020-06-17T16:00:00.000Z"
-description: Anyone else think 2020 is super weird? Something a lot of have never experienced before. We are now in the middle of a global pandemic and are expected to spend as much time as possible indoors. In this post I discuss how I personally have coped with the lockdown and how I've tried to keep on top of my personal physical and mental health 🧠🏋️‍♀️
+description: Anyone else think 2020 is super weird? Something a lot of have never experienced before. We are now in the middle of a global pandemic and are expected to spend as much time as possible indoors. In this post I discuss how I personally have coped with the lockdown and how I've tried to keep on top of my physical and mental health. 🧠🏋️‍♀️
 tags: mental-health, lockdown, quarantine, covid, 2020
 ---
 
