@@ -1,6 +1,6 @@
 ---
 title: 2020 In Review & Plans for 2021
-date: "2021-01-05T20:00:00.000Z"
+date: "2021-01-18T18:15:00.000Z"
 description: 2020 was a very difficult year for everyone, it had its ups and downs but mainly downs. In this blog post I will summarise my year both personally and professionally. I will also make plans and set targets for the new year that I will hope to achieve. 🎯🤞
 tags: 2020, review, plans, 2021, new-year
 ---
