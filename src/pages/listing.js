@@ -47,7 +47,7 @@ class Listing extends React.Component {
               {posts.map(({ node }, index) => {
                 const title = node.frontmatter.title || node.fields.slug
                 const tags =  node.frontmatter.tags ? node.frontmatter.tags.split(',') : []
-                const description = node.excerpt.length > 0 ? node.excerpt : node.frontmatter.description
+                const description = node.frontmatter.description
                 return (
                   <Link
                     key={node.fields.slug}

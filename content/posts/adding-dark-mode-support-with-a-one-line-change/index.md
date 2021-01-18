@@ -1,7 +1,7 @@
 ---
 title: Adding dark mode support with a one line change
 date: "2020-03-21T15:00:00.000Z"
-description: I implemented dark mode *support* on my site using Tailwind with a one line addition. 🌗🚀
+description: This post will take a deep dive on my styling framework of choice and how I used it to implement dark mode *support* across the whole site with just one line change. 🌗🚀
 tags: dark-mode, tailwind, css, hack, tips-tricks, 2020
 ---
 > Disclaimer: Even though I consider myself a full-stack developer, I believe my backend skills are more dominant than my frontend ones. However, I don’t shy away from any frontend work. I embrace it for its own unique challenges. This post is based on my personal experience on styling my site and the approach I took. I’m sure there are other ways this could have been implemented and there may even be better solutions. But this is my way.

@@ -124,3 +124,9 @@ div[role="group"][tabindex] {
       margin-left: 0rem !important;
   }
 }
+
+/* Misc */
+.center-content {
+  margin: 0 auto;
+  display: block;
+}
