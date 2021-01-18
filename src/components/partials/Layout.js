@@ -1,4 +1,5 @@
 import React from "react"
+import Analytics from "../components/Analytics"
 import NavBar from "../home/NavBar"
 import Footer from "../home/Footer"
 import { css } from "../../utils/typography"
@@ -11,17 +12,21 @@ class Layout extends React.Component {
     const header = <NavBar />
 
     return (
-      <div className="flex flex-col bg-primary-light dark:bg-primary-dark h-full">
-        <style
-          dangerouslySetInnerHTML={{
-            __html: css,
-          }}
-        />
-        <header className="px-4 sm:px-4 lg:px-8 xl:px-16">{header}</header>
-        <main>{children}</main>
-        <WaveFormDivider />
-        <Footer />
-      </div>
+      <>
+        <Analytics />
+
+        <div className="flex flex-col bg-primary-light dark:bg-primary-dark h-full">
+          <style
+            dangerouslySetInnerHTML={{
+              __html: css,
+            }}
+          />
+          <header className="px-4 sm:px-4 lg:px-8 xl:px-16">{header}</header>
+          <main>{children}</main>
+          <WaveFormDivider />
+          <Footer />
+        </div>
+      </>
     )
   }
 }
