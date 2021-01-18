@@ -1,5 +1,4 @@
 import React from "react"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 import Twitter from "./partial/socials/Twitter"
 import Github from "./partial/socials/Github"
 import Linkedin from "./partial/socials/Linkedin"
@@ -19,12 +18,12 @@ function Footer() {
       <div className="flex justify-center p-4">
         <span className="text-nord-4">
           © {new Date().getFullYear()}, Built with {` `}{" "}
-          <OutboundLink
+          <a
             className="italic text-nord-5"
             href="https://www.gatsbyjs.org"
           >
             Gatsby
-          </OutboundLink>
+          </a>
         </span>
       </div>
     </footer>
