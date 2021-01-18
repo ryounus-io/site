@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 function NavBar() {
   const [isActive, setActive] = useState(false)
@@ -61,12 +60,12 @@ function NavBar() {
         >
           Blog
         </Link>
-        <OutboundLink
+        <a
           href="/assets/pdf/cv_v3_sept19_web.pdf"
           className="block px-2 py-1 font-semibold text-xl text-gray-700 no-underline dark:text-gray-100 hover:text-nord-10 dark:hover:text-nord-13 sm:mx-2"
         >
           Resume
-        </OutboundLink>
+        </a>
       </nav>
     </header>
   )
