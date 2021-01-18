@@ -3,7 +3,6 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/partials/Layout"
 import Seo from "../components/Seo"
-import Analytics from "../components/Analytics"
 import Hero from "../components/home/Hero"
 
 import "../css/global.css"
@@ -15,7 +14,6 @@ class Index extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <Analytics />
         <Seo title="RYounus - Portfolio" />
         <Hero />
       </Layout>
