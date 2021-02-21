@@ -3,7 +3,7 @@ title: "Showcase #1 - Visualise your life with this cool handy tool"
 date: "2021-02-21T15:00:00.000Z"
 description: This is the first project I built that I will use to kickoff the new 'Showcase' series with. I had several targets for this year and one of them was to build more user facing projects that I can use as part of my poftofolio. I will talk about what I built and how to use it yourself.
 tags: showcase, visualise, data, age, life
-image: "./assets/life-in-weeks.png"
+image: "./assets/logo.png"
 ---
 ### What is the Showcase Series 🎙🎨
 
