@@ -33,7 +33,7 @@ function Seo({ title, description, lang, meta, image, isArticle, location }) {
 
   const getImage = () => {
     if (image) {
-      return `${location.href}/${image}`
+      return `${location.href}${image}`
     }
 
     return site.siteMetadata.icon
