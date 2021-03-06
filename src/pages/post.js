@@ -15,8 +15,11 @@ class Post extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <Seo
+          isArticle={true}
           title={post.frontmatter.title}
           description={post.frontmatter.description || post.excerpt}
+          image={post.frontmatter.image}
+          location={this.props.location}
         />
         <div className="flex flex-wrap -mt-8">
           <div className="w-full px-2 sm:px-10 md:px-20 lg:px-20 xl:px-40">
@@ -98,6 +101,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
+        image
       }
       fields {
         slug
