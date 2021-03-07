@@ -9,6 +9,7 @@ function Seo({ title, description, lang, meta, image, isArticle, location }) {
       query {
         site {
           siteMetadata {
+            siteUrl
             title
             description
             icon
@@ -33,7 +34,9 @@ function Seo({ title, description, lang, meta, image, isArticle, location }) {
 
   const getImage = () => {
     if (image) {
-      return `${location.href}${image}`
+      const baseUrl =  location.origin ? location.origin : site.siteMetadata.siteUrl
+
+      return `${baseUrl}/${image}`
     }
 
     return site.siteMetadata.icon
