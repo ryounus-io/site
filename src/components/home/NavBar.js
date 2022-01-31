@@ -61,7 +61,7 @@ function NavBar() {
           Blog
         </Link>
         <a
-          href="/assets/pdf/cv_v3_sept19_web.pdf"
+          href="/assets/pdf/ry-cv-2022.pdf"
           className="block px-2 py-1 font-semibold text-xl text-gray-700 no-underline dark:text-gray-100 hover:text-nord-10 dark:hover:text-nord-13 sm:mx-2"
         >
           Resume
